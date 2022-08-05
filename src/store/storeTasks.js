@@ -55,12 +55,12 @@ const actions = {
             }
           );
           const responseData = await response.json();
-        //   console.log('response',responseData);
+          console.log('response',responseData);
           if (!response.ok) {
             const error = new Error(responseData.message || 'Failed to fetch!');
             throw error;
           }
-        context.commit('addTask',task);
+        context.commit('addTask',{task:task,id:responseData.name});
     },
     async loadTasks(context,payload){
         const userId  = context.rootGetters.userId ; 

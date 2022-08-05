@@ -107,7 +107,7 @@ import { mapActions } from 'vuex'
 		'edit-task':require('components/tasks/editTask.vue').default
 	},
 	created(){
-		console.log('mid',this.mid,this.id)
+		// console.log('mid',this.mid,this.id)
 	}
 }
 </script>
