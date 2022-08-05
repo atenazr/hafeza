@@ -24,6 +24,7 @@ export default {
     this.$store.dispatch('tryLogin');
   },
   destroyed(){
+    console.log('log out');
     this.$store.dispatch('logout')
   }
 }
